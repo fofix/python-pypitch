@@ -1,0 +1,11 @@
+*.pyc
+*.sw?
+
+# C extension
+*.so
+pypitch/_pypitch.cpp
+
+# build
+build/
+.eggs/
+*.egg-info/
