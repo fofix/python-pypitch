@@ -1,5 +1,7 @@
 # PyPitch
 
+[![Build Status](https://travis-ci.org/fofix/python-pypitch.svg?branch=master)](https://travis-ci.org/fofix/python-pypitch)
+
 
 PyPitch is a C-extension in Python to analyse audio streams for pitch.
 
