@@ -2,9 +2,9 @@ language: python
 
 env:
     global:
-        - CIBW_BEFORE_TEST="pip install cython && python {project}/setup.py build_ext --inplace --force"
+        - CIBW_BEFORE_TEST="pip install cython && cd {project} && python setup.py build_ext --inplace --force"
         - CIBW_TEST_REQUIRES=pytest
-        - CIBW_TEST_COMMAND="python {project}/setup.py test"
+        - CIBW_TEST_COMMAND="cd {project} && python {project}/setup.py test"
         - CIBW_BEFORE_BUILD="pip install cython"
         - CIBW_BUILD=cp27-*
         #- CIBW_BUILD_VERBOSITY=-3
