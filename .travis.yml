@@ -1,16 +1,53 @@
 language: python
-python:
-    - 2.7
-    - 3.4
-    - 3.5
-    - 3.6
-    - 3.7
-    - 3.8
+
+env:
+    global:
+        - CIBW_BEFORE_TEST="pip install cython && python setup.py build_ext --inplace --force"
+        - CIBW_TEST_REQUIRES=pytest
+        - CIBW_TEST_COMMAND="pytest -v"
+        - CIBW_BEFORE_BUILD="pip install cython"
+        - CIBW_BUILD=cp27-*
+        #- CIBW_BUILD_VERBOSITY=-3
+        - TESTS=0
+
+jobs:
+  include:
+    # perform a linux build
+    - services: docker
+    - os: osx
+      language: shell
+    # and a windows build
+    - os: windows
+      language: shell
+      before_install:
+        - choco install python --version 3.8.0
+        - export PATH="/c/Python38:/c/Python38/Scripts:$PATH"
+        # make sure it's on PATH as 'python3'
+        - ln -s /c/Python38/python.exe /c/Python38/python3.exe
+
+    allow_failures:
+    - os: linux
+      python: 2.7
+      env: TESTS=1
+    - os: linux
+      python: 3.7
+      env: TESTS=1
+    - os: linux
+      python: 3.8
+      env: TESTS=1
 
 install:
-    - python -m pip install cython
+  - python -m pip install cibuildwheel
 
 script:
-    - python setup.py check
-    - python setup.py build_ext --inplace --force
-    - python setup.py test
+  - |
+      if [[ "$TESTS" == 1 ]]; then
+        pip install cython;
+        pip install pytest;
+        python setup.py check;
+        python setup.py build_ext --inplace --force;
+        python setup.py test;
+      else
+        # build the wheels, put them into './wheelhouse'
+        python -m cibuildwheel --output-dir wheelhouse
+      fi
