@@ -4,7 +4,7 @@ env:
     global:
         - CIBW_BEFORE_TEST="pip install cython && python setup.py build_ext --inplace --force"
         - CIBW_TEST_REQUIRES=pytest
-        - CIBW_TEST_COMMAND="pytest -v"
+        - CIBW_TEST_COMMAND="python setup.py test"
         - CIBW_BEFORE_BUILD="pip install cython"
         - CIBW_BUILD=cp27-*
         #- CIBW_BUILD_VERBOSITY=-3
@@ -50,5 +50,5 @@ script:
         python setup.py test;
       else
         # build the wheels, put them into './wheelhouse'
-        python -m cibuildwheel --output-dir wheelhouse
+        python -m cibuildwheel --output-dir wheelhouse;
       fi
