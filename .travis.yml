@@ -24,8 +24,6 @@ jobs:
         - export PATH="/c/Python38:/c/Python38/Scripts:$PATH"
         # make sure it's on PATH as 'python3'
         - ln -s /c/Python38/python.exe /c/Python38/python3.exe
-
-    allow_failures:
     - os: linux
       python: 2.7
       env: TESTS=1
@@ -35,6 +33,9 @@ jobs:
     - os: linux
       python: 3.8
       env: TESTS=1
+
+  allow_failures:
+    - env: TESTS=1
 
 install:
   - python -m pip install cibuildwheel
