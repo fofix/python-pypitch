@@ -1,0 +1,12 @@
+include CHANGELOG.md
+include LICENSE
+include MANIFEST.in
+include README.md
+
+recursive-include pypitch *.cpp
+recursive-include pypitch *.hpp
+recursive-include pypitch *.py
+recursive-include pypitch *.pyx
+recursive-include tests *.py
+
+prune pypitch/_pypitch.cpp
