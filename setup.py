@@ -65,5 +65,5 @@ setup(
         'Cython >= 0.27',
     ],
     test_suite="tests",
-    tests_require=['pytest', 'numpy<1.17'],
+    tests_require=['pytest<5', 'numpy<1.17'],
 )
