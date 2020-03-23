@@ -6,17 +6,19 @@
 # from distutils.sysconfig import get_python_lib
 from setuptools import setup
 from setuptools import Extension
+import os
 import sys
 
 from Cython.Build import cythonize
 # from Cython.Distutils import build_ext
 
 
+readme_filepath = os.path.join(os.path.dirname(__file__), "README.md")
 try:
     import pypandoc
-    long_description = pypandoc.convert('README.md', 'rst')
+    long_description = pypandoc.convert(readme_filepath, 'rst')
 except ImportError:
-    long_description = open('README.md').read()
+    long_description = open(readme_filepath).read()
 
 
 # sources
