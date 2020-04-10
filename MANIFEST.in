@@ -3,6 +3,10 @@ include LICENSE
 include MANIFEST.in
 include README.md
 
+recursive-include doc *.py
+recursive-include doc *.rst
+recursive-include doc make.bat
+recursive-include doc Makefile
 recursive-include pypitch *.cpp
 recursive-include pypitch *.hpp
 recursive-include pypitch *.py
