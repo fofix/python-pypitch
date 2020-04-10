@@ -44,16 +44,20 @@ setup(
     author='FoFiX team',
     author_email='fofix@perdu.fr',
     license='GPLv2+',
-    url='https://github.com/fofix/python-pypitch',
+    url='https://fofix.github.io',
     project_urls={
         'Documentation': 'https://pypitch.readthedocs.io',
+        'Source Code': 'https://github.com/fofix/python-pypitch',
+        'Bug Tracker': 'https://github.com/fofix/python-pypitch/issues',
     },
     packages=['pypitch'],
-    package_data={'pypitch': ['*.dll']},
+    #package_data={'pypitch': ['*.dll']},
     zip_safe=False,
     classifiers=[
         'Intended Audience :: Developers',
         'License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)',
+        "Programming Language :: C++",
+        "Programming Language :: Cython",
         'Programming Language :: Python',
         'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.7',
@@ -70,6 +74,7 @@ setup(
     test_suite="tests",
     tests_require=['pytest<5', 'numpy<1.17'],
     extras_require={
+        'tests': ['pytest<5', 'numpy<1.17'],
         'docs': ['sphinx', 'sphinx_rtd_theme'],
     },
 )
