@@ -1,7 +1,7 @@
 Release notes
 =============
 
-1.2-dev (unreleased)
+1.2.dev0 (unreleased)
 ----------------
 
 1.1 (2020-04-10)
