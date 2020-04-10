@@ -45,6 +45,9 @@ setup(
     author_email='fofix@perdu.fr',
     license='GPLv2+',
     url='https://github.com/fofix/python-pypitch',
+    project_urls={
+        'Documentation': 'https://pypitch.readthedocs.io',
+    },
     packages=['pypitch'],
     package_data={'pypitch': ['*.dll']},
     zip_safe=False,
