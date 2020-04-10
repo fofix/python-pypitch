@@ -28,10 +28,19 @@ ext_sources = [
 ]
 
 # extension
+extra_compile_args_pitch = list()
+extra_link_args_pitch = list()
+if sys.platform.startswith("darwin"):
+    # hack: with mac os version 10.13.6 (high sierra), xcode 10 requires the use of the libc++ standard library
+    extra_compile_args_pitch.extend(["-stdlib=libc++", "-mmacosx-version-min=10.9"])
+    extra_link_args_pitch.extend(["-stdlib=libc++", "-mmacosx-version-min=10.9"])
+
 ext = Extension(
     name='pypitch.pypitch',
     sources=ext_sources,
     language='c++',
+    extra_compile_args=extra_compile_args_pitch,
+    extra_link_args=extra_link_args_pitch,
 )
 
 # setup
