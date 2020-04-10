@@ -58,9 +58,9 @@ html_static_path = ['_static']
 
 # on_rtd is whether we are on readthedocs.io
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
+master_doc = 'index'  # XXX: sphinx<2 hack
 
 if not on_rtd:  # only import and set the theme if we're building docs locally
     import sphinx_rtd_theme
-    master_doc = 'index'  # XXX: python2 hack
     html_theme = 'sphinx_rtd_theme'
     html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
