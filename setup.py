@@ -46,7 +46,7 @@ ext = Extension(
 # setup
 setup(
     name='pypitch',
-    version='1.2-dev',
+    version='1.2.dev0',
     description='PyPitch analyses audio streams for pitch',
     long_description=long_description,
     long_description_content_type='text/markdown',
