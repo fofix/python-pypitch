@@ -4,6 +4,9 @@ Release notes
 1.2.dev0 (unreleased)
 ----------------
 
+- Setup: use ``bumpversion`` to bump the version easily
+
+
 1.1 (2020-04-10)
 ----------------
 
