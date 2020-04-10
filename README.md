@@ -30,7 +30,11 @@ Import it:
 
 To build the html doc from source::
 
-
-    $ pip install -e .[docs]
+    $ python -m pip install -e .[docs]
     $ cd doc
     $ make html
+
+or::
+
+    $ python -m pip install -e .[docs]
+    $ python setup.py build_sphinx
