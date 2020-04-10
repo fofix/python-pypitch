@@ -1,7 +1,7 @@
 Release notes
 =============
 
-1.1 (unreleased)
+1.1 (2020-04-10)
 ----------------
 
 - Doc: init
