@@ -66,4 +66,7 @@ setup(
     ],
     test_suite="tests",
     tests_require=['pytest<5', 'numpy<1.17'],
+    extras_require={
+        'docs': ['sphinx', 'sphinx_rtd_theme'],
+    },
 )

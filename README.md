@@ -14,3 +14,13 @@ PyPitch is a C-extension in Python to analyse audio streams for pitch.
 Build the extension:
 
     python setup.py build_ext --inplace --force
+
+
+## Doc
+
+To build the html doc from source::
+
+
+    $ pip install -e .[docs]
+    $ cd doc
+    $ make html
