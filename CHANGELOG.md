@@ -2,15 +2,16 @@ Release notes
 =============
 
 1.2.dev0 (unreleased)
-----------------
+---------------------
 
+- Doc: add a release section
 - Setup: use ``bumpversion`` to bump the version easily
 
 
 1.1 (2020-04-10)
 ----------------
 
-- Doc: initize some basics
+- Doc: initialise some basics
 - Setup: correctly use the relative path of the README file
 - Setup: declare 'docs' extra for the documentation
 - Setup: declare 'tests' extra for tests

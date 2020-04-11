@@ -18,6 +18,12 @@ PyPitch is a C++-extension in Python to analyse audio streams for pitch.
    history
    releasenotes
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Maintainer guide
+
+   release
+
 
 Indices and tables
 ==================
