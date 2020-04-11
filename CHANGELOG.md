@@ -1,8 +1,8 @@
 Release notes
 =============
 
-1.2.dev0 (unreleased)
----------------------
+1.2 (2020-04-12)
+----------------
 
 - Code: python 3 compatible
 - Doc: add a release section
