@@ -21,7 +21,10 @@
 #ifndef NOMINMAX
 #define NOMINMAX
 #endif
+// Visual Studio C++ 9.0 / python 2.7
+#if (_MSC_VER == 1500)
 #define remainder fmod
+#endif
 #endif
 
 #include "pitch.hpp"

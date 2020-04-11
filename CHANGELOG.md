@@ -5,6 +5,7 @@ Release notes
 ---------------------
 
 - Python 3 compatible (CI, code, tests)
+- Code: use `std::fmod` instead of `std::remainder` only for Visual C++ 9.0 (Windows & python 2.7)
 - Doc: add a release section
 - Setup: use ``bumpversion`` to bump the version easily
 
