@@ -82,9 +82,14 @@ setup(
         'Cython >= 0.27',
     ],
     test_suite="tests",
-    tests_require=['pytest<5', 'numpy<1.17'],
+    tests_require=[
+        "pytest<5;python_version<'3.4'",
+        "pytest;python_version>'3.4'",
+        "numpy<1.17;python_version<'3.4'",
+        "numpy;python_version>'3.4'",
+    ],
     extras_require={
-        'tests': ['pytest<5', 'numpy<1.17'],
+        'tests': ["pytest<5;python_version<'3.4'", "pytest;python_version>'3.4'", "numpy<1.17;python_version<'3.4'", "numpy;python_version>'3.4'"],
         'docs': ['sphinx', 'sphinx_rtd_theme'],
     },
 )
