@@ -26,7 +26,7 @@ class AnalyzerTest(unittest.TestCase):
         cpeak = self.analyzer.getPeak()
         peak = 6.020599913279624
 
-        self.assertEquals(cpeak, peak)
+        self.assertEqual(cpeak, peak)
 
     def test_getFormants(self):
         self.analyzer.input(self.instr)
@@ -34,7 +34,7 @@ class AnalyzerTest(unittest.TestCase):
         cformants = self.analyzer.getFormants()
         formants = [None] * 3
 
-        self.assertEquals(cformants, formants)
+        self.assertEqual(cformants, formants)
 
     #def test_findTone(self):
     #    self.analyzer.input(self.instr)
