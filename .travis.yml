@@ -6,7 +6,6 @@ env:
         - CIBW_TEST_REQUIRES=pytest
         - CIBW_TEST_COMMAND="cd {project} && python {project}/setup.py test"
         - CIBW_BEFORE_BUILD="pip install cython"
-        - CIBW_BUILD=cp27-*
         #- CIBW_BUILD_VERBOSITY=-3
         - TESTS=0
 

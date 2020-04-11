@@ -1,6 +1,5 @@
 environment:
   CIBW_BEFORE_BUILD: "pip install cython"
-  CIBW_BUILD: cp27-*
   matrix:
     - APPVEYOR_BUILD_WORKER_IMAGE: Ubuntu
       APPVEYOR_JOB_NAME: "python37-x64-ubuntu"

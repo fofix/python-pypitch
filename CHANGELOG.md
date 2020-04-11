@@ -4,10 +4,9 @@ Release notes
 1.2.dev0 (unreleased)
 ---------------------
 
-- Code: python 3 compatible
+- Python 3 compatible (CI, code, tests)
 - Doc: add a release section
 - Setup: use ``bumpversion`` to bump the version easily
-- Tests: python 3 compatible
 
 
 1.1 (2020-04-10)
