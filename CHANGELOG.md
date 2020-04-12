@@ -1,8 +1,8 @@
 Release notes
 =============
 
-1.2.dev0 (unreleased)
----------------------
+1.2 (2020-04-12)
+----------------
 
 - Python 3 compatible (CI, code, tests)
 - Code: use `std::fmod` instead of `std::remainder` only for Visual C++ 9.0 (Windows & python 2.7)
