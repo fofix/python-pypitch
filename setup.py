@@ -51,7 +51,7 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     author='FoFiX team',
-    author_email='fofix@perdu.fr',
+    author_email='contact@fofix.org',
     license='GPLv2+',
     url='https://fofix.github.io',
     project_urls={

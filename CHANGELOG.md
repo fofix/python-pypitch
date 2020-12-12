@@ -4,6 +4,8 @@ Release notes
 1.3.dev0 (unreleased)
 ---------------------
 
+- Setup: update contact information
+
 
 1.2 (2020-04-12)
 ----------------
