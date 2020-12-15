@@ -5,6 +5,7 @@ Release notes
 ---------------------
 
 - Setup: update contact information
+- CI: replace Travis with Github Actions
 
 
 1.2 (2020-04-12)
