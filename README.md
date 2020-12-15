@@ -1,6 +1,6 @@
 # PyPitch
 
-[![Build Status](https://travis-ci.org/fofix/python-pypitch.svg?branch=master)](https://travis-ci.org/fofix/python-pypitch)
+[![Tests](https://github.com/fofix/python-pypitch/workflows/Tests/badge.svg?branch=master)](https://github.com/fofix/python-pypitch/actions?query=workflow:Test)
 [![Build status](https://ci.appveyor.com/api/projects/status/0f6yb99cd37v6li6?svg=true)](https://ci.appveyor.com/project/Linkid/python-pypitch)
 [![Documentation Status](https://readthedocs.org/projects/pypitch/badge/?version=latest)](http://pypitch.readthedocs.io/en/latest/?badge=latest)
 
