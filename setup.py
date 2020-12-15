@@ -86,10 +86,11 @@ setup(
         "pytest<5;python_version<'3.4'",
         "pytest;python_version>'3.4'",
         "numpy<1.17;python_version<'3.4'",
-        "numpy;python_version>'3.4'",
+        "numpy<1.20;python_version=='3.6'",
+        "numpy;python_version>'3.6'",
     ],
     extras_require={
-        'tests': ["pytest<5;python_version<'3.4'", "pytest;python_version>'3.4'", "numpy<1.17;python_version<'3.4'", "numpy;python_version>'3.4'"],
+        'tests': ["pytest<5;python_version<'3.4'", "pytest;python_version>'3.4'", "numpy<1.17;python_version<'3.4'", "numpy<1.20;python_version=='3.6'", "numpy;python_version>'3.6'"],
         'docs': ['sphinx', 'sphinx_rtd_theme'],
     },
 )
