@@ -45,13 +45,13 @@ static const double FFT_MINFREQ = 45.0;
 static const double FFT_MAXFREQ = 5000.0;
 
 Tone::Tone():
-  freq(0.0),
-  db(-getInf()),
-  stabledb(-getInf()),
-  age()
+	freq(0.0),
+	db(-getInf()),
+	stabledb(-getInf()),
+	age()
 {
 	for (std::size_t i = 0; i < MAXHARM; ++i)
-	  harmonics[i] = -getInf();
+		harmonics[i] = -getInf();
 }
 
 void Tone::print() const {
@@ -66,16 +66,16 @@ bool Tone::operator==(double f) const {
 }
 
 Analyzer::Analyzer(double rate, std::size_t step):
-  m_step(step),
-  m_rate(rate),
-  m_window(FFT_N),
-  m_bufRead(0),
-  m_bufWrite(0),
-  m_fftLastPhase(FFT_N / 2),
-  m_peak(0.0),
-  m_oldfreq(0.0)
+	m_step(step),
+	m_rate(rate),
+	m_window(FFT_N),
+	m_bufRead(0),
+	m_bufWrite(0),
+	m_fftLastPhase(FFT_N / 2),
+	m_peak(0.0),
+	m_oldfreq(0.0)
 {
-  	// Hamming window
+	// Hamming window
 	for (size_t i=0; i < FFT_N; i++) {
 		m_window[i] = float(0.53836 - 0.46164 * std::cos(2.0 * M_PI * i / (FFT_N - 1)));
 	}
@@ -87,7 +87,7 @@ namespace {
 		double db;
 		bool harm[Tone::MAXHARM];
 		Peak(double _freq = 0.0, double _db = -getInf()):
-		  freq(_freq), db(_db)
+			freq(_freq), db(_db)
 		{
 			for (std::size_t i = 0; i < Tone::MAXHARM; ++i) harm[i] = false;
 		}
@@ -250,5 +250,3 @@ void Analyzer::mergeWithOld(tones_t& tones) const {
 void Analyzer::process() {
 	while (calcFFT()) calcTones();
 }
-
-

@@ -36,4 +36,3 @@ static inline double getNaN() { return std::numeric_limits<double>::quiet_NaN();
 static inline double getInf() { return std::numeric_limits<double>::infinity(); }
 
 #endif
-

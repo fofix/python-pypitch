@@ -35,12 +35,12 @@
 struct Tone {
 	static const std::size_t MAXHARM = 48; ///< maximum harmonics
 	static const std::size_t MINAGE = 2; ///< minimum age
-	double freq; ///< frequency
-	double db; ///< dezibels
+	double freq; ///< frequency (Hz)
+	double db; ///< decibels (dB)
 	double stabledb; ///< stable decibels
 	double harmonics[MAXHARM]; ///< harmonics array
 	std::size_t age; ///< age
-	Tone(); 
+	Tone();
 	void print() const; ///< prints Tone
 	bool operator==(double f) const; ///< equality operator
 	void update(Tone const& t); ///< update Tone
@@ -132,4 +132,3 @@ class Analyzer {
 };
 
 #endif
-
