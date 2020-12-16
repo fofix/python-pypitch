@@ -6,6 +6,7 @@ Release notes
 
 - Setup: update contact information
 - CI: replace Travis with Github Actions
+- Code: remove the `sqrLT` function
 
 
 1.2 (2020-04-12)

@@ -82,8 +82,6 @@ Analyzer::Analyzer(double rate, std::size_t step):
 }
 
 namespace {
-	bool sqrLT(float a, float b) { return a * a < b * b; }
-
 	struct Peak {
 		double freq;
 		double db;
