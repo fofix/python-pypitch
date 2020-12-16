@@ -26,6 +26,7 @@ Header only, no need to link with libda.
 
 #include <complex>
 #include <cstddef>
+#include <vector>
 
 namespace da {
 
