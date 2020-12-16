@@ -4,6 +4,7 @@ Release notes
 1.3.dev0 (unreleased)
 ---------------------
 
+- Python 3.9 compatibility
 - Setup: update contact information
 - CI: replace Travis with Github Actions
 - Code: remove the `sqrLT` function
