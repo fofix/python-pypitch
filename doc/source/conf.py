@@ -22,7 +22,7 @@ copyright = '2020, FoFiX team'
 author = 'FoFiX team'
 
 # The full version, including alpha/beta/rc tags
-release = '1.3'
+release = '2.0.dev0'
 
 
 # -- General configuration ---------------------------------------------------
