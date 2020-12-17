@@ -53,7 +53,7 @@ setup(
     author='FoFiX team',
     author_email='contact@fofix.org',
     license='GPLv2+',
-    url='https://fofix.github.io',
+    url='https://fofix.org',
     project_urls={
         'Documentation': 'https://pypitch.readthedocs.io',
         'Source Code': 'https://github.com/fofix/python-pypitch',
