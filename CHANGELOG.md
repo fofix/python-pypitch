@@ -1,8 +1,8 @@
 Release notes
 =============
 
-1.3.dev0 (unreleased)
----------------------
+1.3 (2020-12-17)
+----------------
 
 - Python 3.9 compatibility
 - Setup: update contact information
