@@ -4,6 +4,8 @@ Release notes
 2.0 (unreleased)
 ----------------
 
+- build: drop python 3.6 support
+
 
 1.3 (2020-12-17)
 ----------------
