@@ -31,9 +31,10 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install cython
           python -m pip install pytest
+          python -m pip install "numpy<1.17;python_version<'3.4'" "numpy<1.22;python_version=='3.7'" "numpy;python_version>'3.7'"
 
       - name: Test the lib
         run: |
           python setup.py build_ext --inplace --force
           python setup.py check
-          python setup.py test
+          pytest .

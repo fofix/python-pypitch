@@ -84,14 +84,6 @@ setup(
     install_requires=[
         'Cython >= 0.27',
     ],
-    test_suite="tests",
-    tests_require=[
-        "pytest<5;python_version<'3.4'",
-        "pytest;python_version>'3.4'",
-        "numpy<1.17;python_version<'3.4'",
-        "numpy<1.22;python_version=='3.7'",
-        "numpy;python_version>'3.7'",
-    ],
     extras_require={
         'tests': [
             "pytest<5;python_version<'3.4'",
