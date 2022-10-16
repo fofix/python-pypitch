@@ -80,7 +80,7 @@ setup(
     ],
     keywords='pitch audio',
     ext_modules=cythonize(ext, compiler_directives={'language_level': sys.version_info[0]}),
-    setup_requires=['cython', 'pytest-runner'],
+    setup_requires=['cython'],
     install_requires=[
         'Cython >= 0.27',
     ],
