@@ -5,6 +5,7 @@ Release notes
 ----------------
 
 - build: drop python 3.6 support
+- build: remove `pytest-runner` from setup requirements
 
 
 1.3 (2020-12-17)
