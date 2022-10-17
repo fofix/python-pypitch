@@ -5,6 +5,7 @@ Release notes
 ----------------
 
 - build: drop python 3.6 support
+- build: add python 3.10 support
 - build: remove `pytest-runner` from setup requirements
 
 
