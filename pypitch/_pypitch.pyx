@@ -60,7 +60,7 @@ cdef class Analyzer:
     def input(self, instr):
         cdef float* begin
         if not isinstance(instr, str):
-            instr = instr.tostring()  # assume it was a numpy array
+            instr = instr.tobytes()  # assume it was a numpy array
         begin = <float*><char*>instr
         self._this.input(begin, begin + (len(instr) // sizeof(float)))
     def process(self):
