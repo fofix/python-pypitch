@@ -14,5 +14,5 @@ Modules
 
 There a two modules available:
 
-- ``Analyzer``: to analyze input audio and transform it into useable data
+- ``Analyzer``: to analyze input audio and transform it into usable data
 - ``Tone``: to represent tones.
