@@ -1,11 +1,12 @@
 Release notes
 =============
 
-2.0 (unreleased)
+2.0 (2023-07-20)
 ----------------
 
 - build: drop python 3.6 support
 - build: add python 3.10 support
+- build: add python 3.11 support
 - build: remove `pytest-runner` from setup requirements
 
 
