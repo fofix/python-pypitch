@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-
 # from distutils.core import setup
 # from distutils.extension import Extension
 # from distutils.sysconfig import get_python_lib
@@ -46,7 +45,7 @@ ext = Extension(
 # setup
 setup(
     name='pypitch',
-    version='2.0',
+    version='2.0.1',
     description='PyPitch analyses audio streams for pitch',
     long_description=long_description,
     long_description_content_type='text/markdown',
