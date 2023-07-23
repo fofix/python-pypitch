@@ -68,8 +68,6 @@ setup(
         "Programming Language :: C++",
         "Programming Language :: Cython",
         'Programming Language :: Python',
-        'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
@@ -84,13 +82,11 @@ setup(
     ext_modules=cythonize(ext, compiler_directives={'language_level': sys.version_info[0]}),
     setup_requires=['cython'],
     install_requires=[
-        'Cython >= 0.27',
+        'Cython >= 0.29.34',
     ],
     extras_require={
         'tests': [
-            "pytest<5;python_version<'3.4'",
             "pytest;python_version>'3.4'",
-            "numpy<1.17;python_version<'3.4'",
             "numpy<1.22;python_version=='3.7'",
             "numpy;python_version>'3.7'"
         ],
