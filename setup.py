@@ -69,11 +69,11 @@ setup(
         "Programming Language :: Cython",
         'Programming Language :: Python',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8',
-        'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
         'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
+        'Programming Language :: Python :: 3.13',
+        'Programming Language :: Python :: 3.14',
         'Topic :: Multimedia',
         'Topic :: Multimedia :: Sound/Audio',
         'Topic :: Software Development :: Libraries',
@@ -83,12 +83,12 @@ setup(
     setup_requires=['cython'],
     install_requires=[
         'Cython >= 0.29.34',
+        'setuptools',
     ],
     extras_require={
         'tests': [
             "pytest;python_version>'3.4'",
-            "numpy<1.22;python_version=='3.7'",
-            "numpy;python_version>'3.7'"
+            "numpy;python_version>='3.10'"
         ],
         'docs': ['sphinx', 'sphinx_rtd_theme'],
     },

@@ -1,6 +1,16 @@
 Release notes
 =============
 
+2.1 (unreleased)
+----------------
+
+- build: drop python 3.7 support
+- build: drop python 3.8 support
+- build: drop python 3.9 support
+- build: add python 3.12 support
+- build: add python 3.13 support
+- build: add python 3.14 support
+
 2.0 (2023-07-20)
 ----------------
 
